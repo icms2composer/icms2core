@@ -1,0 +1,17 @@
+{
+    "name": "icms2composer/icms2core",
+    "description": "Instant CMS 2.x Core as composer package",
+    "type": "library",
+    "license": "GPL-2.0",
+    "authors": [
+        {
+            "name": "Instant Soft",
+            "homepage": "http://instantcms.ru",
+            "email": "fuze@instantcms.ru"
+        },
+        {
+            "name": "Puchkin Dmitriy",
+            "email": "pdima88@mail.ru"
+        }
+    ]
+}
