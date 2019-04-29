@@ -13,5 +13,8 @@
             "name": "Puchkin Dmitriy",
             "email": "pdima88@mail.ru"
         }
-    ]
+    ],
+    "require": {
+        "phpmailer/phpmailer": "5.2.27"
+    }
 }
