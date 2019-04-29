@@ -120,7 +120,7 @@ class Database {
         mysqli_report(MYSQLI_REPORT_STRICT);
 
         try {
-            $this->mysqli = new \mysqli($this->options['db_host'], $this->options['db_user'], $this->options['db_pass'], $this->options['db_base']);
+            $this->mysqli = new \mysqli($this->options['db']['host'], $this->options['db']['user'], $this->options['db']['pass'], $this->options['db']['base']);
         } catch (\Exception $e) {
 
             $this->connect_error = $e->getMessage();
@@ -130,7 +130,7 @@ class Database {
 
         $this->mysqli->set_charset('utf8');
 
-        if(!empty($this->options['clear_sql_mode'])){
+        if(!empty($this->options['db']['clear_sql_mode'])){
             $this->mysqli->query("SET sql_mode=''");
         }
 
@@ -142,7 +142,7 @@ class Database {
 
         $this->setTimezone();
 
-		$this->prefix = $this->options['db_prefix'];
+		$this->prefix = $this->options['db']['prefix'];
 
         $this->init_start_time = time();
 

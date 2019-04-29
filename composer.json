@@ -15,11 +15,14 @@
         }
     ],
     "require": {
-        "phpmailer/phpmailer": "5.2.27"
+        "phpmailer/phpmailer": "5.2.27",
+        "mustangostang/spyc": "^0.6.2",
+        "mobiledetect/mobiledetectlib": "^2.8"
     },
     "autoload": {
         "psr-4": {
-            "icms2\\core\\": "/core"
+            "icms2\\core\\": "/core",
+            "": "/lib"
         }
     } 
 }

@@ -14,7 +14,6 @@ class Config {
      * изменив путь, используя две точки (..) для
      * указания на родительские каталоги
      */
-    const CONFIG_DIR = '/system/config/';
 
     private static $instance = null;
     private static $mapping  = null;
@@ -189,7 +188,7 @@ class Config {
 
     public function load($cfg_file = 'config.php'){
 
-        $cfg_file = PATH . self::CONFIG_DIR . $cfg_file;
+        $cfg_file = PATH .'/'. $cfg_file;
 
         if(!is_readable($cfg_file)){
             return false;

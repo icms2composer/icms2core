@@ -2221,7 +2221,7 @@ class Model {
 
         if($yaml === "---\n- 0\n"){ return array(); }
 
-        return Spyc::YAMLLoadString($yaml);
+        return \Spyc::YAMLLoadString($yaml);
 
     }
 

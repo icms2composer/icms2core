@@ -1,6 +1,11 @@
 <?php
 namespace icms2\core;
 
+use icms2\core\Request as cmsRequest;
+use icms2\core\Config as cmsConfig;
+use icms2\core\Model as cmsModel;
+use icms2\core\Database as cmsDatabase;
+
 class Core {
 
     private static $instance;
