@@ -16,5 +16,10 @@
     ],
     "require": {
         "phpmailer/phpmailer": "5.2.27"
-    }
+    },
+    "autoload": {
+        "psr-4": {
+            "icms2\\core\\": "/core"
+        }
+    } 
 }
